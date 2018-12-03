@@ -1,0 +1,23 @@
+RFC - TTTP(Tic Tac Toe Protocol) 1.0
+
++------------------------+
+| Player | Action | Data |
++------------------------+
+
+Player (1 bit) - Either X (0) or O (1)
+
+Actions (byte):
+0b00000000 - Quit (No Data)
+0b00000001 - Set Name (Data is name (ASCII) (16 bytes))
+0b00000010 - Set Position (Data: position (4 bits))
+  
+
+Example:
+Player [X] wants to take position [3]
+
+0 00000010 0011
+
+player = num >> pos-1 & 1
+action = num >> pos-1 & 0b11111111
+data = num << 924526
+
