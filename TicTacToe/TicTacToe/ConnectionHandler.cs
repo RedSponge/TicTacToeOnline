@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using TicTacToe.Msg;
 
 namespace TicTacToe
 {
@@ -14,8 +15,6 @@ namespace TicTacToe
         private int port;
 
         private TcpClient connection;
-        private StreamReader streamReader;
-        private StreamWriter streamWriter;
 
         public ConnectionHandler(string ip, int port)
         {
@@ -25,24 +24,17 @@ namespace TicTacToe
         public void Connect()
         {
             connection = new TcpClient(ip, port);
-            streamReader = new StreamReader(connection.GetStream());
-            streamWriter = new StreamWriter(connection.GetStream());
         }
 
-        public void Send(int data)
+        public void Send(Message message)
         {
-            streamWriter.WriteLine(data);
-            streamWriter.Flush();
+            connection.GetStream().Write(MessageEncoder.Encode(message), (int)connection.GetStream().Position, Constants.MESSAGE_SIZE);
+            connection.GetStream().Flush();
         }
 
         public void Close()
         {
-            streamWriter.Close();
-            streamReader.Close();
             connection.Close();
         }
-
-
-
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TicTacToe.Msg;
 
 namespace TicTacToe
 {
@@ -21,9 +22,9 @@ namespace TicTacToe
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            connection = new ConnectionHandler(Constants.IP, Constants.PORT);
-            Console.WriteLine(MessageBuilder.Build(MessageBuilder.Player.X, MessageBuilder.GameAction.SET_NAME, MessageBuilder.DataGen.GetASCIIName("Hello!")));
-            connection.Send(MessageBuilder.Build(MessageBuilder.Player.X, MessageBuilder.GameAction.SET_NAME, MessageBuilder.DataGen.GetASCIIName("Hello!")));
+            new Msg.Message(Player.X, GameAction.SET_POSITION, 1024);
+            //connection = new ConnectionHandler(Constants.IP, Constants.PORT);
+            //connection.Send(new Msg.Message(Player.X, GameAction.SET_POSITION, 7));
             //connection.Close();
         }
     }

@@ -57,7 +57,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MessageBuilder.cs" />
+    <Compile Include="Msg\GameAction.cs" />
+    <Compile Include="Msg\Message.cs" />
+    <Compile Include="MessageEncoder.cs" />
+    <Compile Include="MessageDecoder.cs" />
+    <Compile Include="Msg\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
