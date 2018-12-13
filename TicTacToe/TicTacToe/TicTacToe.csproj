@@ -58,7 +58,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Msg\GameAction.cs" />
-    <Compile Include="Msg\Message.cs" />
+    <Compile Include="Msg\PacketMessage.cs" />
     <Compile Include="MessageEncoder.cs" />
     <Compile Include="MessageDecoder.cs" />
     <Compile Include="Msg\Player.cs" />

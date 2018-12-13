@@ -10,15 +10,15 @@ namespace TicTacToe
     public class MessageEncoder
     {
 
-        public static byte[] Encode(Message message)
+        public static byte[] Encode(PacketMessage message)
         {
-            byte[] result = new byte[Constants.MESSAGE_SIZE];
-            result[0] = (byte)message.player;
-            result[1] = (byte)message.action;
+            byte[] result = new byte[Constants.MESSAGE_LENGTH];
+            result[Constants.PLAYER_OFFSET] = (byte)message.player;
+            result[Constants.ACTION_OFFSET] = (byte)message.action;
 
-            for(int i = 0; i < Constants.DATA_SIZE; i++)
+            for(int i = 0; i < Constants.DATA_LENGTH; i++)
             {
-                result[i + 2] = message.data[i];
+                result[i + Constants.DATA_OFFSET] = message.data[i];
             }
             return result;
         }

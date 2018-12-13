@@ -17,3 +17,12 @@ C:\Users\RedSponge\Desktop\Code\C#\TicTacToeOnline\TicTacToe\TicTacToe\obj\Debug
 C:\Users\RedSponge\Desktop\Code\C#\TicTacToeOnline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
 C:\Users\RedSponge\Desktop\Code\C#\TicTacToeOnline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
 C:\Users\RedSponge\Desktop\Code\C#\TicTacToeOnline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe.config
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.exe
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.pdb
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\bin\Debug\TicTacToe.exe
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\bin\Debug\TicTacToe.pdb
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Form1.resources
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources
+C:\Users\StudentN\Downloads\Tictactoeonline\TicTacToe\TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache

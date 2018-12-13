@@ -10,9 +10,12 @@ namespace TicTacToe
     public class MessageDecoder
     {
 
-        public static Message Decode(int data)
+        public static PacketMessage Decode(byte[] data)
         {
-            return null;
+            Player player = (Player)data[Constants.PLAYER_OFFSET];
+            GameAction action = (GameAction)data[Constants.ACTION_OFFSET];
+            byte[] dt = data.SubArray(Constants.DATA_OFFSET, Constants.DATA_LENGTH);
+            return new PacketMessage(player, action, dt);
         }
 
     }
