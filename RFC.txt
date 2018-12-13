@@ -10,6 +10,8 @@ Actions (byte):
 0b00000000 - Quit (No Data)
 0b00000001 - Set Name (Data is name (ASCII) (16 bytes))
 0b00000010 - Set Position (Data: position (4 bits))
+0b00000011 - Initial Connection (No Data)
+0b00000100 - Sign Assignment (Data: 1 byte: player)
   
 
 Example:
